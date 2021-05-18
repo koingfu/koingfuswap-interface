@@ -12,7 +12,7 @@ import {
     Trade,
     TradeType,
     WETH
-} from '@sushiswap/sdk'
+} from '@koingfu/koingfuswap-sdk'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useAllTokens } from '../hooks/Tokens'

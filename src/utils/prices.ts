@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, Fraction, JSBI, Percent, TokenAmount, Trade } from '@sushiswap/sdk'
+import { ChainId, CurrencyAmount, Fraction, JSBI, Percent, TokenAmount, Trade } from '@koingfu/koingfuswap-sdk'
 import {
     ALLOWED_PRICE_IMPACT_HIGH,
     ALLOWED_PRICE_IMPACT_LOW,

@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@sushiswap/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@koingfu/koingfuswap-sdk'
 import { fortmatic, injected, lattice, portis, torus, walletconnect, walletlink } from '../connectors'
 
 import { AbstractConnector } from '@web3-react/abstract-connector'
@@ -91,7 +91,9 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
     [ChainId.HARMONY]: [WETH[ChainId.HARMONY]],
     [ChainId.HARMONY_TESTNET]: [WETH[ChainId.HARMONY_TESTNET]],
     [ChainId.OKEX]: [WETH[ChainId.OKEX]],
-    [ChainId.OKEX_TESTNET]: [WETH[ChainId.OKEX_TESTNET]]
+    [ChainId.OKEX_TESTNET]: [WETH[ChainId.OKEX_TESTNET]],
+    [ChainId.SMARTBCH]: [WETH[ChainId.SMARTBCH]],
+    [ChainId.SMARTBCH_TESTNET]: [WETH[ChainId.SMARTBCH_TESTNET]]
 }
 
 // Default Ethereum chain tokens
