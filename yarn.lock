@@ -2868,19 +2868,6 @@
   resolved "https://registry.yarnpkg.com/@sushiswap/default-token-list/-/default-token-list-6.11.0.tgz#3d6db17da672f2b58394d9a7b6daf6386dcc041a"
   integrity sha512-PLS+9g36sDEzsvUuXDHHtxpWJ7HmzW/Gsm+ZlUfSbM3Ze8U5uwZsKoTk9JGkdK/n9+BoHpd8mvz/mX39ISh8lw==
 
-"@sushiswap/sdk@5.0.0-canary.7":
-  version "5.0.0-canary.7"
-  resolved "https://registry.yarnpkg.com/@sushiswap/sdk/-/sdk-5.0.0-canary.7.tgz#a7179314300dc98644a1b30446f0f7fe9c0e693f"
-  integrity sha512-21IsU1yB+RETZZs2ORoMLNTRNYNln10bDTVwX7wpntCCdjeACnOyYb/I8yli2cNaajJWPZt62gGoCP5ntndSyg==
-  dependencies:
-    "@uniswap/v2-core" "^1.0.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
 "@sushiswap/sushi-data@^2.0.0-canary.2":
   version "2.0.0-canary.2"
   resolved "https://registry.yarnpkg.com/@sushiswap/sushi-data/-/sushi-data-2.0.0-canary.2.tgz#9130989960087e2b77a38fb496a817485ff096b1"
