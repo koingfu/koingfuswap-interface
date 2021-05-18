@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, JSBI, Percent, ROUTER_ADDRESS, Token } from '@sushiswap/sdk'
+import { ChainId, Currency, CurrencyAmount, ETHER, JSBI, Percent, ROUTER_ADDRESS, Token } from '@koingfu/koingfuswap-sdk'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 
 import { AddressZero } from '@ethersproject/constants'
@@ -362,6 +362,28 @@ const builders = {
             default:
                 return `${prefix}/${type}/${data}`
         }
+    },
+    smartbch: (chainName = '', data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+        const prefix = 'https://explorer.koingfu.com'
+        switch (type) {
+            case 'transaction':
+                return `${prefix}/tx/${data}`
+            case 'token':
+                return `${prefix}/tokenAddr/${data}`
+            default:
+                return `${prefix}/${type}/${data}`
+        }
+    },
+    smartbchTestnet: (chainName = '', data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+        const prefix = 'https://explorer.koingfu.com'
+        switch (type) {
+            case 'transaction':
+                return `${prefix}/tx/${data}`
+            case 'token':
+                return `${prefix}/tokenAddr/${data}`
+            default:
+                return `${prefix}/${type}/${data}`
+        }
     }
 }
 
@@ -460,6 +482,14 @@ const chains: ChainObject = {
     [ChainId.OKEX_TESTNET]: {
         chainName: '',
         builder: builders.okexTestnet
+    },
+    [ChainId.SMARTBCH]: {
+        chainName: '',
+        builder: builders.smartbch
+    },
+    [ChainId.SMARTBCH_TESTNET]: {
+        chainName: '',
+        builder: builders.smartbchTestnet
     }
 }
 

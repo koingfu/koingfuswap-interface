@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/sdk'
+import { ChainId } from '@koingfu/koingfuswap-sdk'
 import { FortmaticConnector } from './Fortmatic'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { LatticeConnector } from '@web3-react/lattice-connector'
@@ -33,7 +33,9 @@ const RPC = {
     [ChainId.HARMONY]: 'https://explorer.harmony.one',
     [ChainId.HARMONY_TESTNET]: 'https://explorer.pops.one',
     [ChainId.OKEX]: 'https://exchainrpc.okex.org',
-    [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org'
+    [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org',
+    [ChainId.SMARTBCH]: 'http://52.22.211.124:8545',
+    [ChainId.SMARTBCH_TESTNET]: 'http://52.22.211.124:8545'
 }
 
 export const network = new NetworkConnector({
@@ -68,7 +70,9 @@ export const injected = new InjectedConnector({
         1666600000, // harmony
         1666700000, // harmony testnet
         66, // okex testnet
-        65 // okex testnet
+        65, // okex testnet
+        10000, // smartbch mainnet
+        10001, // smartbch testnet
     ]
 })
 
