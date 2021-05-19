@@ -39,7 +39,7 @@ const RPC = {
 }
 
 export const network = new NetworkConnector({
-    defaultChainId: 1,
+    defaultChainId: 10001,
     urls: RPC
 })
 

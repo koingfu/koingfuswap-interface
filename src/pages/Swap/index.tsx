@@ -319,7 +319,7 @@ export default function Swap() {
     return (
         <>
             <Helmet>
-                <title>Swap | Sushi</title>
+                <title>Swap | Koingfu</title>
                 <meta
                     name="description"
                     content="Sushi allows for swapping of ERC20 compatible tokens across multiple networks"
@@ -613,7 +613,7 @@ export default function Swap() {
                             <DefaultVersionLink />
                         ) : null}
                     </BottomGrouping>
-                    {!trade && chainId && chainId === ChainId.MAINNET && (
+                    {/* {!trade && chainId && chainId === ChainId.MAINNET && (
                         <div
                             className="hidden sm:block w-full cursor-pointer pt-4 w-full"
                             onClick={() => toggleNetworkModal()}
@@ -630,7 +630,7 @@ export default function Swap() {
                                 </div>
                             </DarkCard>
                         </div>
-                    )}
+                    )} */}
                 </Wrapper>
             </div>
             {!swapIsUnsupported ? (

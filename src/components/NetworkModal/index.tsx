@@ -119,6 +119,17 @@ const PARAMS: {
         },
         rpcUrls: ['https://exchainrpc.okex.org'],
         blockExplorerUrls: ['https://www.oklink.com/okexchain']
+    },
+    [ChainId.SMARTBCH]: {
+        chainId: '0x2711',
+        chainName: 'SmartBCH',
+        nativeCurrency: {
+            name: 'Bitcoin Cash',
+            symbol: 'BCH',
+            decimals: 18
+        },
+        rpcUrls: ['http://52.22.211.124:8545'],
+        blockExplorerUrls: ['https://explorer.koingfu.com']
     }
 }
 
@@ -133,21 +144,22 @@ export default function NetworkModal(): JSX.Element | null {
         <Modal isOpen={networkModalOpen} onDismiss={toggleNetworkModal}>
             <ModalHeader onClose={toggleNetworkModal} title="Select a Network" />
             <div className="text-lg text-primary mb-6">
-                You are currently browsing <span className="font-bold text-pink">SUSHI</span>
+                You are currently browsing <span className="font-bold text-pink">Koingfu</span>
                 <br /> on the <span className="font-bold text-blue">{NETWORK_LABEL[chainId]}</span> network
             </div>
 
             <div className="flex flex-col space-y-5 overflow-y-auto">
                 {[
-                    ChainId.MAINNET,
-                    ChainId.FANTOM,
-                    ChainId.BSC,
-                    ChainId.MATIC,
-                    ChainId.HECO,
-                    ChainId.XDAI,
-                    ChainId.HARMONY,
-                    ChainId.AVALANCHE,
-                    ChainId.OKEX
+                    // ChainId.MAINNET,
+                    // ChainId.FANTOM,
+                    // ChainId.BSC,
+                    // ChainId.MATIC,
+                    // ChainId.HECO,
+                    // ChainId.XDAI,
+                    // ChainId.HARMONY,
+                    // ChainId.AVALANCHE,
+                    // ChainId.OKEX,
+                    ChainId.SMARTBCH,
                 ].map((key: ChainId, i: number) => {
                     if (chainId === key) {
                         return (
