@@ -42,11 +42,12 @@ function AppBar(): JSX.Element {
                 {({ open }) => (
                     <>
                         <div className="px-4 py-1.5">
-                            <div className="flex items-center justify-between h-16">
-                                <div className="flex items-center">
-                                    {/* <div className="flex-shrink-0">
+                            <div className="flex items-center justify-between">
+                                <div></div>
+                                {/* <div className="flex items-center">
+                                    <div className="flex-shrink-0">
                                         <img src={Logo} alt="Sushi" className="h-10 w-auto" />
-                                    </div> */}
+                                    </div> 
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
                                             <NavLink id={`swap-nav-link`} to={'/swap'}>
@@ -110,10 +111,10 @@ function AppBar(): JSX.Element {
                                                     >
                                                         Analytics
                                                     </ExternalLink>
-                                                )} */}
+                                                )}
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="flex flex-row items-center justify-center w-full lg:w-auto p-4 fixed left-0 bottom-0 bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
                                     <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
