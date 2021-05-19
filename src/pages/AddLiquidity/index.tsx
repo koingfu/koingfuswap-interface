@@ -327,9 +327,9 @@ export default function AddLiquidity({
     return (
         <>
             <Helmet>
-                <title>Add Liquidity | Sushi</title>
+                <title>Add Liquidity | Koingfu</title>
             </Helmet>
-            <div className="w-full max-w-2xl mb-5 px-4">
+            <div className="w-full max-w-4xl mb-5 px-4">
                 <NavLink
                     className="text-center text-secondary hover:text-high-emphesis text-base font-medium"
                     to={'/pool'}
@@ -349,7 +349,7 @@ export default function AddLiquidity({
                     {currencies[Field.CURRENCY_B]?.getSymbol(chainId)} POOL
                 </button> */}
             </div>
-            <div className="bg-dark-900 w-full max-w-2xl rounded z-10 shadow-liquidity-purple-glow">
+            <div className="bg-dark-900 w-full max-w-4xl rounded z-10 shadow-liquidity-purple-glow">
                 <Header input={currencies[Field.CURRENCY_A]} output={currencies[Field.CURRENCY_B]} />
                 <Wrapper>
                     <TransactionConfirmationModal
@@ -521,7 +521,7 @@ export default function AddLiquidity({
                     </AutoColumn>
                 </Wrapper>
             </div>
-            <div className="w-full max-w-2xl z-0">
+            <div className="w-full max-w-4xl z-0">
                 {!addIsUnsupported ? (
                     pair && !noLiquidity && pairState !== PairState.INVALID ? (
                         <MinimalPositionCard showUnwrapped={oneCurrencyIsWETH} pair={pair} />

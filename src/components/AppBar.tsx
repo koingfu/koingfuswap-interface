@@ -23,7 +23,7 @@ function AppBar(): JSX.Element {
     const { pathname } = useLocation()
 
     const [navClassList, setNavClassList] = useState(
-        'w-screen bg-transparent gradiant-border-bottom z-10 backdrop-filter backdrop-blur'
+        'w-screen bg-transparent z-10 backdrop-filter backdrop-blur'
     )
 
     const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
@@ -32,7 +32,7 @@ function AppBar(): JSX.Element {
         if (pathname === '/trade') {
             setNavClassList('w-screen bg-transparent z-10 backdrop-filter backdrop-blur')
         } else {
-            setNavClassList('w-screen bg-transparent gradiant-border-bottom z-10 backdrop-filter backdrop-blur')
+            setNavClassList('w-screen bg-transparent z-10 backdrop-filter backdrop-blur')
         }
     }, [pathname])
 
@@ -42,7 +42,7 @@ function AppBar(): JSX.Element {
                 {({ open }) => (
                     <>
                         <div className="px-4 py-1.5">
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-center">
                                 <div></div>
                                 {/* <div className="flex items-center">
                                     <div className="flex-shrink-0">
@@ -116,7 +116,7 @@ function AppBar(): JSX.Element {
                                     </div>
                                 </div> */}
 
-                                <div className="flex flex-row items-center justify-center w-full lg:w-auto p-4 fixed left-0 bottom-0 bg-dark-1000 lg:relative lg:p-0 lg:bg-transparent">
+                                <div className="flex flex-row items-center justify-center w-full max-w-4xl">
                                     <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">
                                         {/* {chainId &&
                                             [ChainId.MAINNET].includes(chainId) &&
@@ -285,8 +285,7 @@ function AppBar(): JSX.Element {
                                         {/* <MoreMenu /> */}
                                     </div>
                                 </div>
-                                <div className="-mr-2 flex sm:hidden">
-                                    {/* Mobile menu button */}
+                                {/* <div className="-mr-2 flex sm:hidden">
                                     <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-high-emphesis focus:outline-none">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
@@ -295,7 +294,7 @@ function AppBar(): JSX.Element {
                                             <Burger title="Burger" className="block h-6 w-6" aria-hidden="true" />
                                         )}
                                     </Disclosure.Button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
