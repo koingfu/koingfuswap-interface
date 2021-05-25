@@ -15,7 +15,7 @@ import Polygon from '../assets/networks/polygon-network.jpg'
 import Rinkeby from '../assets/networks/rinkeby-network.jpg'
 import Ropsten from '../assets/networks/ropsten-network.jpg'
 import xDai from '../assets/networks/xdai-network.jpg'
-import SmartBCH from '../assets/networks/smartbch-network.jpg'
+import SmartBCH from '../assets/networks/smartbch-network.png'
 
 export const NETWORK_ICON = {
     [ChainId.MAINNET]: Mainnet,

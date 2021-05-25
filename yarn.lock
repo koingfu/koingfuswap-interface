@@ -2434,6 +2434,11 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
+"@koingfu/default-token-list@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@koingfu/default-token-list/-/default-token-list-1.0.1.tgz#dbaefe690be9f7ece065d821f8af083bfd04dbef"
+  integrity sha512-/prmBOKHewzzAEkEDy2E9EMMZfdQGkHsG88ktmBEYnDxVnr8ng8ue8HiTe/LVaU410iheowmy8vXeu89ot/f3g==
+
 "@koingfu/koingfuswap-sdk@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@koingfu/koingfuswap-sdk/-/koingfuswap-sdk-0.1.1.tgz#3eb16adaa2deb182fdd89dd0a6df3ab0a848f177"
@@ -2862,11 +2867,6 @@
   version "2.0.0-canary.0"
   resolved "https://registry.yarnpkg.com/@sushiswap/core/-/core-2.0.0-canary.0.tgz#582605e6968f634684da7cc3308c3353595e326b"
   integrity sha512-dr+GL+KmAOpQva/NlcIij061LZFUMUv2S5o8HZvGK4vOKvWX9apzlBn9ZRS73Kj5ASKu8x4hc+ExD8XGLIxvjw==
-
-"@sushiswap/default-token-list@^6.11.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@sushiswap/default-token-list/-/default-token-list-6.11.0.tgz#3d6db17da672f2b58394d9a7b6daf6386dcc041a"
-  integrity sha512-PLS+9g36sDEzsvUuXDHHtxpWJ7HmzW/Gsm+ZlUfSbM3Ze8U5uwZsKoTk9JGkdK/n9+BoHpd8mvz/mX39ISh8lw==
 
 "@sushiswap/sushi-data@^2.0.0-canary.2":
   version "2.0.0-canary.2"
