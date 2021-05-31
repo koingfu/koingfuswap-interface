@@ -1,6 +1,7 @@
 import { ChainId } from '@koingfu/koingfuswap-sdk'
 import React from 'react'
 import { Redirect, Route, RouteComponentProps, useLocation, Switch } from 'react-router-dom'
+import { Text } from 'rebass'
 import { useActiveWeb3React } from 'hooks/useActiveWeb3React'
 import Connect from './kashi/pages/Connect'
 import BorrowMarkets from './kashi/pages/Markets/Borrow'
@@ -43,6 +44,7 @@ import Transactions from './pages/Transactions'
 function Routes(): JSX.Element {
     const { chainId } = useActiveWeb3React()
     return (
+        <>
         <Switch>
             <PublicRoute exact path="/connect" component={Connect} />
             {/* BentoApps */}
@@ -132,6 +134,13 @@ function Routes(): JSX.Element {
             {/* Catch all */}
             <Route component={RedirectPathToSwapOnly} />
         </Switch>
+        {(chainId === ChainId.SMARTBCH_TESTNET) && (
+            <Text fontSize={18} fontWeight={500} textAlign="center" marginTop={40}>
+                <div>This is a testnet, and tokens do no have any value.</div>
+                <div>这是一个测试网，令牌没有任何价值。</div>
+            </Text>
+        )}
+        </>
     )
 }
 

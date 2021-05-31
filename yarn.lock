@@ -2439,10 +2439,10 @@
   resolved "https://registry.yarnpkg.com/@koingfu/default-token-list/-/default-token-list-1.0.1.tgz#dbaefe690be9f7ece065d821f8af083bfd04dbef"
   integrity sha512-/prmBOKHewzzAEkEDy2E9EMMZfdQGkHsG88ktmBEYnDxVnr8ng8ue8HiTe/LVaU410iheowmy8vXeu89ot/f3g==
 
-"@koingfu/koingfuswap-sdk@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@koingfu/koingfuswap-sdk/-/koingfuswap-sdk-0.1.1.tgz#3eb16adaa2deb182fdd89dd0a6df3ab0a848f177"
-  integrity sha512-cfVLEVKcGZlU+Oezw6mkSmO/0OeoQ6EkdGK46Q8xf7w3AOKc0N9O7Z9sHr4piSoOdIme7yncwu6jxumtUsBX4Q==
+"@koingfu/koingfuswap-sdk@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@koingfu/koingfuswap-sdk/-/koingfuswap-sdk-0.1.3.tgz#3bff20b50ec40a16fe02c03ce107df591a1f1118"
+  integrity sha512-LFvEfXm+dsr+SYLXMRCkczuezIacujdSOYXAXHfkcQXf4XzMfSajTeLU2JJMjmqmfr3IE4VrI9kdSETNO4YRGA==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
