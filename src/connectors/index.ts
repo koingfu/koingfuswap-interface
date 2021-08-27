@@ -34,12 +34,12 @@ const RPC = {
     [ChainId.HARMONY_TESTNET]: 'https://explorer.pops.one',
     [ChainId.OKEX]: 'https://exchainrpc.okex.org',
     [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org',
-    [ChainId.SMARTBCH]: 'http://52.22.211.124:8545',
+    [ChainId.SMARTBCH]: 'https://smartbch.greyh.at',
     [ChainId.SMARTBCH_TESTNET]: 'http://52.22.211.124:8545'
 }
 
 export const network = new NetworkConnector({
-    defaultChainId: 10001,
+    defaultChainId: 10000,
     urls: RPC
 })
 
@@ -71,8 +71,8 @@ export const injected = new InjectedConnector({
         // 1666700000, // harmony testnet
         // 66, // okex testnet
         // 65, // okex testnet
-        // 10000, // smartbch mainnet
-        10001, // smartbch testnet
+        10000, // smartbch mainnet
+        10001 // smartbch testnet
     ]
 })
 
