@@ -1,4 +1,13 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, JSBI, Percent, ROUTER_ADDRESS, Token } from '@koingfu/koingfuswap-sdk'
+import {
+    ChainId,
+    Currency,
+    CurrencyAmount,
+    ETHER,
+    JSBI,
+    Percent,
+    ROUTER_ADDRESS,
+    Token
+} from '@koingfu/koingfuswap-sdk'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 
 import { AddressZero } from '@ethersproject/constants'
@@ -364,7 +373,7 @@ const builders = {
         }
     },
     smartbch: (chainName = '', data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
-        const prefix = 'https://explorer.koingfu.com'
+        const prefix = 'https://smartscan.cash'
         switch (type) {
             case 'transaction':
                 return `${prefix}/tx/${data}`
@@ -375,7 +384,7 @@ const builders = {
         }
     },
     smartbchTestnet: (chainName = '', data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
-        const prefix = 'https://explorer.koingfu.com'
+        const prefix = 'https://smartscan.cash'
         switch (type) {
             case 'transaction':
                 return `${prefix}/tx/${data}`

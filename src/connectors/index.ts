@@ -35,7 +35,7 @@ const RPC = {
     [ChainId.OKEX]: 'https://exchainrpc.okex.org',
     [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org',
     [ChainId.SMARTBCH]: 'https://smartbch.greyh.at',
-    [ChainId.SMARTBCH_TESTNET]: 'http://52.22.211.124:8545'
+    [ChainId.SMARTBCH_TESTNET]: 'https://moeing.tech:9545'
 }
 
 export const network = new NetworkConnector({

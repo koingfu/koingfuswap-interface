@@ -117,8 +117,6 @@ function CurrencyRow({
     const customAdded = useIsUserAddedToken(currency)
     const balance = useCurrencyBalance(account ?? undefined, currency)
 
-    console.log(currency.getSymbol(chainId))
-
     // only show add or remove buttons if not on selected list
     return (
         <MenuItem

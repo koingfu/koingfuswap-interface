@@ -121,15 +121,26 @@ const PARAMS: {
         blockExplorerUrls: ['https://www.oklink.com/okexchain']
     },
     [ChainId.SMARTBCH]: {
-        chainId: '0x2711',
+        chainId: '0x2710',
         chainName: 'SmartBCH',
         nativeCurrency: {
             name: 'Bitcoin Cash',
             symbol: 'BCH',
             decimals: 18
         },
-        rpcUrls: ['http://52.22.211.124:8545'],
-        blockExplorerUrls: ['https://explorer.koingfu.com']
+        rpcUrls: ['https://smartbch.greyh.at'],
+        blockExplorerUrls: ['https://smartscan.cash']
+    },
+    [ChainId.SMARTBCH_TESTNET]: {
+        chainId: '0x2711',
+        chainName: 'SmartBCH Testnet',
+        nativeCurrency: {
+            name: 'Bitcoin Cash',
+            symbol: 'BCH',
+            decimals: 18
+        },
+        rpcUrls: ['https://moeing.tech:9545'],
+        blockExplorerUrls: ['https://smartscan.cash']
     }
 }
 
@@ -159,7 +170,7 @@ export default function NetworkModal(): JSX.Element | null {
                     // ChainId.HARMONY,
                     // ChainId.AVALANCHE,
                     // ChainId.OKEX,
-                    ChainId.SMARTBCH,
+                    ChainId.SMARTBCH
                 ].map((key: ChainId, i: number) => {
                     if (chainId === key) {
                         return (

@@ -2479,15 +2479,15 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
-"@koingfu/default-token-list@^1.0.3":
-  "integrity" "sha512-o9Ba/5yGglFVJiPnR/aT06r5IQhZTlB7JwkbXSQYAxLeCb/AQEaBhDaKoiewSFFgZwmHUYegEq9uns/hKL2zuA=="
-  "resolved" "https://registry.npmjs.org/@koingfu/default-token-list/-/default-token-list-1.0.3.tgz"
-  "version" "1.0.3"
+"@koingfu/default-token-list@^1.0.5":
+  "integrity" "sha512-qWwGPvoU8WUMMHY0z+dzWbE8Ev1MwMsph0JwqLjfqKinSFt/GXATDJHWTXIfsnLB5MG8Bu0E4ZLhYP+oo/6jlg=="
+  "resolved" "https://registry.npmjs.org/@koingfu/default-token-list/-/default-token-list-1.0.5.tgz"
+  "version" "1.0.5"
 
-"@koingfu/koingfuswap-sdk@^1.0.0":
-  "integrity" "sha512-TIylfn5kTLAuCyWLM6fXYP3U/DEnguoN3InbSPqxeUvuBB/l9lj74g8QCsAgJBBk9PtlU7F6gPM0YsOsf9YVJQ=="
-  "resolved" "https://registry.npmjs.org/@koingfu/koingfuswap-sdk/-/koingfuswap-sdk-1.0.0.tgz"
-  "version" "1.0.0"
+"@koingfu/koingfuswap-sdk@^1.0.2":
+  "integrity" "sha512-LSr9Gv/KTFZZ5W4V31MEdH+tCvgEbtO6SjQThPoMAfi6tpTPFWKYcVXmUqwgHg882fbW3vzzBdnz7hGM5Dwn6g=="
+  "resolved" "https://registry.npmjs.org/@koingfu/koingfuswap-sdk/-/koingfuswap-sdk-1.0.2.tgz"
+  "version" "1.0.2"
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     "big.js" "^5.2.2"
